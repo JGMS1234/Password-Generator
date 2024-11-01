@@ -1,0 +1,120 @@
+/* Reset and base styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-image: url('orsrc46861.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10svh 10svw;
+    border-radius: 1.5rem;
+    background-color: hsla(192, 100%, 74%, 0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#inp_section {
+    display: flex;
+    align-items: center;
+    gap: 1.5svw;
+    margin-block: 3svh;
+}
+
+#p_length {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 1svh 2svw;
+    border: 2px solid hsla(180, 100%, 25%, 0.6);
+    background-color: transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+#p_length:hover {
+    scale: 1.05;
+}
+
+#p_length:active {
+    scale: 0.95;
+}
+
+#Gen {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: 2px solid hsla(180, 100%, 25%, 0.6);
+    transition: all 0.25s ease-in-out;
+}
+
+#Gen:hover {
+    border: 2px solid hsla(120, 100%, 25%, 0.5);
+    background-color: hsla(120, 100%, 25%, 0.8);
+    scale: 1.05;
+}
+
+#Gen:active {
+    background-color: hsla(120, 100%, 25%, 1);
+    background-color: hsla(120, 100%, 25%, 0.8);
+    scale: 0.95;
+}
+
+/* Media elements */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form elements */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Typography */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* Accessibility and layout */
+#root, #__next {
+    isolation: isolate;
+}
+
+/* Remove default focus styles */
+:focus {
+    outline: 0;
+}
+
+/* Add focus styles for accessibility */
+/* :focus-visible {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+} */
